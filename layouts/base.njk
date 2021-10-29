@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ title or metadata.title }}</title>
+    <meta name="description" content="{{ description or metadata.description }}">
+    <link rel="stylesheet" href="{{ '/css/index.css' | url }}">
+    <meta name="theme-color" content="{{ metadata.theme-light }}" media="(prefers-color-scheme: light)">
+    <meta name="theme-color" content="{{ metadata.theme-dark }}" media="(prefers-color-scheme: dark)">
+  </head>
+  <body>
+    <header>
+      <h1 class="home"><a href="{{ '/' | url }}">{{ metadata.title }}</a></h1>
+    </header>
+
+    <main>
+      {{ content | safe }}
+    </main>
+
+    <footer>
+      <ul class="metalinks">
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">Conditions d'utilisation</a></li>
+        <li><a href="#">Vie privée</a></li>
+      </ul>
+      <p class="copyright"><small>© Tous droits réservés 2021</small></p>
+    </footer>
+
+    <!-- Current page: {{ page.url | url }} -->
+  </body>
+</html>

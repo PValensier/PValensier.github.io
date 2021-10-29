@@ -1,0 +1,14 @@
+---
+layout: base.njk
+---
+
+{% for book in collections.books %}
+<section>
+  <h1>{{ book.data.title }}</h1>
+  <p>{{ book.data.blurb }}</p>
+  <a href="{{ book.url | url }}">En détails</a>
+</section>
+{% endfor %}
+
+
+{{ content | safe }}

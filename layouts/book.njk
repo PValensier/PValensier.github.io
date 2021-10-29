@@ -1,0 +1,15 @@
+---
+layout: base.njk
+---
+<blockquote>
+  <p>{{ quote | safe }}</p>
+</blockquote>
+
+<h1>{{ title }}</h1>
+
+{{ content | safe }}
+
+<img src="/img/{{ cover | url }}" alt="" loading="lazy">
+
+<a href="{{ fnacLink | url }}">Acheter sur fnac.fr</a>
+<a href="{{ readOnlineLink | url }}">Lire en ligne</a>
