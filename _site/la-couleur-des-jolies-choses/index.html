@@ -6,37 +6,71 @@
     <title>La Couleur des Jolies Choses</title>
     <meta name="description" content="">
     <link rel="stylesheet" href="/css/index.css">
-    <meta name="theme-color" content="NaN" media="(prefers-color-scheme: light)">
-    <meta name="theme-color" content="NaN" media="(prefers-color-scheme: dark)">
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Meow+Script&display=swap" rel="stylesheet">
   </head>
   <body>
-    <header>
-      <h1 class="home"><a href="/"></a></h1>
+    <header id=header role=banner>
+      <a href="/">Paul Valensier</a>
     </header>
 
-    <main>
-      <blockquote>
-  <p>Je songe d’un air grave qu’il me reste à peu près vingt-six jours.</p>
-</blockquote>
-
+    <main id=main>
+      
 <h1>La Couleur des Jolies Choses</h1>
 
 <p>Gérard Léopold, 79 ans, part en retraite spirituelle au Népal. Après un cataclysme, il se retrouve prisonnier dans la roche. Seul face à lui-même, il fait un bilan de sa vie.</p>
 <p>Il explore son for intérieur, découvre sa véritable identité et une richesse insoupçonnée qui le guide vers les voies de la spiritualité.</p>
 
 
-<img src="/img/la-couleur-des-jolies-choses.png" alt="" loading="lazy">
+<picture>
+  <source type="image/avif" srcset="/img/la-couleur-des-jolies-choses.avif">
+  <source type="image/webp" srcset="/img/la-couleur-des-jolies-choses.webp">
+  <img src="/img/la-couleur-des-jolies-choses.png" alt="" loading="lazy">
+</picture>
 
-<a href="https://google.com">Acheter sur fnac.fr</a>
-<a href="https://google.com">Lire en ligne</a>
+<ul class="buy-links">
+  <li>Découvre le premier chapitre gratuitement <a href=".">PDF</a> <a href=".">Audio</a></li>
+  <li><a href=".">Achète la version papier sur Amazon.fr</a></li>
+  <li><a href=".">Achète la version digital sur BoD.fr</a></li>
+</ul>
+
+<blockquote id="excerpt">
+  <p>Je me suis souvent demandé qui je voulais être. J’ai passé le plus clair de mon temps à chercher qui j’étais. A l’image d’un enfant qui s’entête, j’ai testé des choses. J’ai rempli ma vie, j’ai consommé. J’ai couru après les choses. J’ai oublié de vivre.</p>
+</blockquote>
+
+<section id="testimonials">
+  <blockquote>
+    J’ai adoré comme une tarte aux pommes
+    <address>Annie L.</address>
+  </blockquote>
+  <blockquote>
+    J’ai adoré comme une tarte aux pommes
+    <address>Annie L.</address>
+  </blockquote>
+  <blockquote>
+    J’ai adoré comme une tarte aux pommes
+    <address>Annie L.</address>
+  </blockquote>
+</section>
+
+<section id="about">
+  <img src="/img/paul-valensier.jpg" alt="Paul le fumeur de pipe" loading="lazy">
+  <p>Je m’appelle Paul Valensier Je m’appelle Paul Valensier Je m’appelle Paul Valensier Je m’appelle Paul Valensier Je m’appelle Paul Valensier Je m’appelle Paul Valensier Je m’appelle Paul Valensier Je m’appelle Paul Valensier Je m’appelle Paul Valensier Je m’appelle Paul Valensier Je m’appelle Paul Valensier Je m’appelle Paul Valensier Je m’appelle Paul Valensier Je m’appelle Paul Valensier Je m’appelle Paul Valensier Je m’appelle Paul Valensier Je m’appelle Paul Valensier Je m’appelle Paul Valensier Je m’appelle Paul Valensier Je m’appelle Paul Valensier Je m’appelle Paul Valensier Je m’appelle Paul Valensier Je m’appelle Paul Valensier Je m’appelle Paul Valensier.</p>
+</section>
     </main>
 
-    <footer>
+    <footer id=footer role=contentinfo>
+      <blockquote>
+        <p>Quand tu te promènes le soir seule dans la rue, retourne-toi. Je serai là à te regarder en me touchant le zizi.</p>
+        <address>Paul Valensier</address>
+      </blockquote>
+
       <ul class="metalinks">
-        <li><a href="#">Contact</a></li>
         <li><a href="#">Conditions d'utilisation</a></li>
         <li><a href="#">Vie privée</a></li>
       </ul>
+
       <p class="copyright"><small>© Tous droits réservés 2021</small></p>
     </footer>
 

@@ -8,7 +8,7 @@ blurb: Gérard Léopold, 79 ans, part en retraite spirituelle au Népal. Après 
 fnacLink: https://google.com
 readOnlineLink: https://google.com
 
-cover: la-couleur-des-jolies-choses.png
+cover: la-couleur-des-jolies-choses
 ---
 
 Gérard Léopold, 79 ans, part en retraite spirituelle au Népal. Après un cataclysme, il se retrouve prisonnier dans la roche. Seul face à lui-même, il fait un bilan de sa vie.
