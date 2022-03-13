@@ -6,24 +6,30 @@
     <title>{{ title or metadata.title }}</title>
     <meta name="description" content="{{ description or metadata.description }}">
     <link rel="stylesheet" href="{{ '/css/index.css' | url }}">
-    <meta name="theme-color" content="{{ metadata.theme-light }}" media="(prefers-color-scheme: light)">
-    <meta name="theme-color" content="{{ metadata.theme-dark }}" media="(prefers-color-scheme: dark)">
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Meow+Script&display=swap" rel="stylesheet">
   </head>
   <body>
-    <header>
-      <h1 class="home"><a href="{{ '/' | url }}">{{ metadata.title }}</a></h1>
+    <header id=header role=banner>
+      <a href="{{ '/' | url }}">{{ metadata.title }}</a>
     </header>
 
-    <main>
+    <main id=main>
       {{ content | safe }}
     </main>
 
-    <footer>
+    <footer id=footer role=contentinfo>
+      <blockquote>
+        <p>Quand tu te promènes le soir seule dans la rue, retourne-toi. Je serai là à te regarder en me touchant le zizi.</p>
+        <address>Paul Valensier</address>
+      </blockquote>
+
       <ul class="metalinks">
-        <li><a href="#">Contact</a></li>
         <li><a href="#">Conditions d'utilisation</a></li>
         <li><a href="#">Vie privée</a></li>
       </ul>
+
       <p class="copyright"><small>© Tous droits réservés 2021</small></p>
     </footer>
 

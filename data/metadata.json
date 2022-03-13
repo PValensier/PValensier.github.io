@@ -1,4 +1,7 @@
 {
-  "theme-light": "#F16821",
-  "theme-dark": "#1A3263"
+  "title": "Paul Valensier",
+  "theme": {
+    "light": "#FAB95B",
+    "dark": "#1A3263"
+  }
 }

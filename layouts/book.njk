@@ -1,15 +1,43 @@
 ---
 layout: base.njk
 ---
-<blockquote>
-  <p>{{ quote | safe }}</p>
-</blockquote>
 
 <h1>{{ title }}</h1>
 
 {{ content | safe }}
 
-<img src="/img/{{ cover | url }}" alt="" loading="lazy">
+<picture>
+  <source type="image/avif" srcset="/img/{{ cover | url }}.avif">
+  <source type="image/webp" srcset="/img/{{ cover | url }}.webp">
+  <img src="/img/{{ cover | url }}.png" alt="" loading="lazy">
+</picture>
 
-<a href="{{ fnacLink | url }}">Acheter sur fnac.fr</a>
-<a href="{{ readOnlineLink | url }}">Lire en ligne</a>
+<ul class="buy-links">
+  <li>Découvre le premier chapitre gratuitement <a href="{{ pdfLink | url }}">PDF</a> <a href="{{ audioLink | url }}">Audio</a></li>
+  <li><a href="{{ amazonLink | url }}">Achète la version papier sur Amazon.fr</a></li>
+  <li><a href="{{ bodLink | url }}">Achète la version digital sur BoD.fr</a></li>
+</ul>
+
+<blockquote id="excerpt">
+  <p>Je me suis souvent demandé qui je voulais être. J’ai passé le plus clair de mon temps à chercher qui j’étais. A l’image d’un enfant qui s’entête, j’ai testé des choses. J’ai rempli ma vie, j’ai consommé. J’ai couru après les choses. J’ai oublié de vivre.</p>
+</blockquote>
+
+<section id="testimonials">
+  <blockquote>
+    J’ai adoré comme une tarte aux pommes
+    <address>Annie L.</address>
+  </blockquote>
+  <blockquote>
+    J’ai adoré comme une tarte aux pommes
+    <address>Annie L.</address>
+  </blockquote>
+  <blockquote>
+    J’ai adoré comme une tarte aux pommes
+    <address>Annie L.</address>
+  </blockquote>
+</section>
+
+<section id="about">
+  <img src="/img/paul-valensier.jpg" alt="Paul le fumeur de pipe" loading="lazy">
+  <p>Je m’appelle Paul Valensier Je m’appelle Paul Valensier Je m’appelle Paul Valensier Je m’appelle Paul Valensier Je m’appelle Paul Valensier Je m’appelle Paul Valensier Je m’appelle Paul Valensier Je m’appelle Paul Valensier Je m’appelle Paul Valensier Je m’appelle Paul Valensier Je m’appelle Paul Valensier Je m’appelle Paul Valensier Je m’appelle Paul Valensier Je m’appelle Paul Valensier Je m’appelle Paul Valensier Je m’appelle Paul Valensier Je m’appelle Paul Valensier Je m’appelle Paul Valensier Je m’appelle Paul Valensier Je m’appelle Paul Valensier Je m’appelle Paul Valensier Je m’appelle Paul Valensier Je m’appelle Paul Valensier Je m’appelle Paul Valensier.</p>
+</section>
