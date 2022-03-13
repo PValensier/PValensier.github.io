@@ -13,9 +13,9 @@
           pkgs = nixpkgs.legacyPackages.${system};
         in 
           {
-            devShell.x86_64-darwin =
+            devShell.${system} =
               pkgs.mkShell {
-                buildInputs = [ pkgs.nodejs ];
+                buildInputs = [ pkgs.nodejs-12_x ];
               };
           };
     in
