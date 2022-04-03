@@ -50,13 +50,17 @@
     "node-deps": {
       "flake": false,
       "locked": {
-        "narHash": "sha256-J9VjHThUujDyjePvt1IYeypJxiWdViXrDfwvbpOb1m0=",
-        "path": "./node-deps",
-        "type": "path"
+        "lastModified": 1648995687,
+        "narHash": "sha256-ne8Z9sOxzfJQqSNKHVcPt1eR2pcs2Oh0GFDTNllN4bQ=",
+        "owner": "PValensier",
+        "repo": "eleventix",
+        "rev": "047961957129103e8e8b5237f642331c0cf4e495",
+        "type": "github"
       },
       "original": {
-        "path": "./node-deps",
-        "type": "path"
+        "owner": "PValensier",
+        "repo": "eleventix",
+        "type": "github"
       }
     },
     "root": {

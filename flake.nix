@@ -5,7 +5,7 @@
     nixpkgs.url = github:nixos/nixpkgs/nixpkgs-unstable;
     flake-utils.url = github:numtide/flake-utils;
     flake-compat = { url = github:edolstra/flake-compat; flake = false; };
-    node-deps = { url = path:./node-deps; flake = false; };
+    node-deps = { url = github:PValensier/eleventix; flake = false; };
   };
 
   outputs = { self, nixpkgs, flake-utils, flake-compat, node-deps }: 
