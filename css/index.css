@@ -2,9 +2,19 @@
   --level1: #E8E2DB;
   --level2: #FAB95B;
   --level3: #F16821;
+  --level41: #a4c1fc;
   --level4: #1A3263;
+  --level5: #0a1224;
 
   --text: Magnat, Georgia, "Times new roman", serif;
+  --masthead: 'Founders Grotesk X-Condensed', Impact, sans-serif;
+}
+
+@font-face {
+  font-family: 'Founders Grotesk X-Condensed';
+  font-weight: 600;
+  font-style: normal;
+  src:  url('../fonts/founders-grotesk-x-condensed-medium.woff2') format('woff2');
 }
 
 @font-face {
@@ -31,12 +41,258 @@
         url('../fonts/Magnat-TextRegularItalic.woff') format('woff');
 }
 
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+/*
+  2. Remove default margin
+*/
+* {
+  margin: 0;
+}
+/*
+  3. Allow percentage-based heights in the application
+*/
+html, body {
+  height: 100%;
+}
+/*
+  Typographic tweaks!
+  4. Add accessible line-height
+  5. Improve text rendering
+*/
+body {
+  background: white;
+  color:rgba(0, 0, 0, .75);
+  font-size: 20px;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+/*
+  6. Improve media defaults
+*/
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+/*
+  7. Remove built-in form typography styles
+*/
+input, button, textarea, select {
+  font: inherit;
+}
+/*
+  8. Avoid text overflows
+*/
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+/*
+  9. Create a root stacking context
+*/
+#root, #__next {
+  isolation: isolate;
+}
+
 html,
 body {
-  padding: 0;
-  margin: 0;
   background-color: white;
   font-family: var(--text);
-  font-size: 18px;
-  line-height: 24px;
+}
+
+small {
+  font-size: inherit;
+}
+
+#header,
+#footer {
+  display: grid;
+  grid-template-columns: repeat(14, 1fr);
+  column-gap: 16px;
+}
+
+#header {
+  font-family: var(--masthead);
+  padding: 1.5em 0;
+}
+
+#home {
+  grid-column-start: 2;
+  grid-column-end: 7;
+  font-size: 2em;
+  align-self: center;
+  color: inherit;
+  text-decoration: none;
+}
+
+#header > nav {
+  grid-column-start: 7;
+  grid-column-end: -2;
+}
+
+#header > nav > ul {
+  padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: end;
+}
+
+#header > nav > ul > li > a {
+  display: inline-block;
+  padding: 1.5em;
+  text-decoration: none;
+}
+
+#content {
+  grid-column-start: 1;
+  grid-column-end: -1;
+  display: grid;
+  grid-template-columns: repeat(14, 1fr);
+}
+
+#content > h1 {
+  grid-row-start: 1;
+  grid-row-end: 2;
+  grid-column-start: 3;
+  grid-column-end: -3;
+  text-align: center;
+}
+
+#content > picture {
+  grid-row-start: 2;
+  grid-column-start: 2;
+  grid-column-end: 6;
+}
+
+#content > .summary {
+  grid-row-start: 2;
+  grid-column-start: 7;
+  grid-column-end: 12;
+}
+
+#excerpt {
+  grid-column-start: 1;
+  grid-column-end: 16;
+  background-color: var(--level4);
+  color: var(--level1);
+  font-style: italic;
+  font-size:  36px;
+  line-height: 40px;
+  display: grid;
+  grid-template-columns: repeat(14, 1fr);
+  column-gap: 16px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+#excerpt > p {
+  grid-column-start: 3;
+  grid-column-end: 13;
+}
+
+#testimonials {
+  display: grid;
+  grid-template-columns: repeat(14, 1fr);
+  column-gap: 16px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+#testimonials > blockquote {
+  background-color: var(--level1);
+  padding: 16px 4px;
+  margin: 0 -4px;
+  min-height: 10em;
+}
+
+#testimonials > blockquote > address {
+  font-style: normal;
+  font-weight: bold;
+}
+
+#testimonials > blockquote:nth-child(3n+1) {
+  grid-column-start: 4;
+  grid-column-end: 6;
+}
+
+#testimonials > blockquote:nth-child(3n+2) {
+  grid-column-start: 6;
+  grid-column-end: 8;
+}
+
+#testimonials > blockquote:nth-child(3n) {
+  grid-column-start: 8;
+  grid-column-end: 10;
+}
+
+#about {
+  border-top: 1px solid;
+  padding-bottom: 60px;
+  padding-top: 60px;
+  grid-column-start: 2;
+  grid-column-end: 14;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  column-gap: 16px;
+}
+
+#about > img {
+  grid-column-start: 7;
+  grid-column-end: -2;
+  aspect-ratio: 4 / 3;
+  overflow: hidden;
+  grid-row-start: 1;
+}
+
+#about > p {
+  grid-column-start: 2;
+  grid-column-end: 6;
+  grid-row-start: 1;
+}
+
+#footer {
+  background-color: var(--level5);
+  color: white;
+  text-align: center;
+  padding: 60px 0 20px;
+}
+
+#footer > blockquote {
+  margin: 0 0 120px;
+}
+
+#footer > blockquote > p {
+  font-family: 'Meow Script', cursive;
+  font-size: 3em;
+  line-height: 1em;
+  margin: 0 0 .33em;
+}
+
+#footer a {
+  color: white;
+  text-decoration: none;
+  border-bottom: 1px solid var(--level41);
+}
+
+#footer > .metalinks,
+#footer > .copyright {
+  font-size: 14px;
+}
+
+.metalinks {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 0;
+  list-style: none;
+  column-gap: 60px;
+  margin: 0 0 1.5em;
+}
+
+#footer  > * {
+  grid-column-start: 4;
+  grid-column-end: -4;
 }
