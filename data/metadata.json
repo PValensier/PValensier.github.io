@@ -3,5 +3,8 @@
   "theme": {
     "light": "#FAB95B",
     "dark": "#1A3263"
+  },
+  "footer": {
+    "quote": "Je dédie ce site à la chanson française, mais aussi à cette rencontre avec toi."
   }
 }
