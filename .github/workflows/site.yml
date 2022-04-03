@@ -12,7 +12,7 @@ jobs:
     - uses: nixbuild/nix-quick-install-action@v12
       with:
         nix_conf: experimental-features = nix-command flakes
-    - run: nix build .
+    - run: nix build --option substitute false .
     - name: "Deploying 🚀"
       uses: peaceiris/actions-gh-pages@v1.1.0
       env:
