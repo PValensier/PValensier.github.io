@@ -1,7 +1,9 @@
 module.exports = function (eleventyConfig) {
-  eleventyConfig.addPassthroughCopy({ "src/img": "img" });
-  eleventyConfig.addPassthroughCopy({ "src/css": "css" });
-  eleventyConfig.addPassthroughCopy({ "src/fonts": "fonts" });
+  eleventyConfig.addPassthroughCopy({
+    "src/img": "img",
+    "src/css": "css",
+    "src/fonts": "fonts",
+  });
   return {
     markdownTemplateEngine: "njk",
     htmlTemplateEngine: "njk",

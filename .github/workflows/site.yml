@@ -22,10 +22,10 @@ jobs:
       run: nix build --json \
         | jq -r '.[].outputs | to_entries[].value' \
         | cachix push mycache
-    - run: nix develop --run "echo OK"
+    - run: nix build .
     - name: "Deploying 🚀"
       uses: peaceiris/actions-gh-pages@v1.1.0
       env:
-        PUBLISH_DIR: _site 
+        PUBLISH_DIR: result 
         PUBLISH_BRANCH: gh-pages
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

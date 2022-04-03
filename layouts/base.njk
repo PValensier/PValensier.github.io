@@ -11,15 +11,23 @@
     <link href="https://fonts.googleapis.com/css2?family=Meow+Script&display=swap" rel="stylesheet">
   </head>
   <body>
-    <header id=header role=banner>
-      <a href="{{ '/' | url }}">{{ metadata.title }}</a>
+    <header id="header" role="banner">
+      <a id="home" href="{{ '/' | url }}">{{ metadata.title }}</a>
+
+      <nav>
+        <ul>
+          <li><a href="/livres.html">ses livres</a>
+          <li><a href="/livres.html">son rêve</a>
+          <li><a href="/livres.html">sa vie</a>
+        </ul>
+      </nav>
     </header>
 
-    <main id=main>
+    <main id="main">
       {{ content | safe }}
     </main>
 
-    <footer id=footer role=contentinfo>
+    <footer id="footer" role="contentinfo">
       <blockquote>
         <p>Quand tu te promènes le soir seule dans la rue, retourne-toi. Je serai là à te regarder en me touchant le zizi.</p>
         <address>Paul Valensier</address>

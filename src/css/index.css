@@ -7,7 +7,7 @@
   --level5: #0a1224;
 
   --text: Magnat, Georgia, "Times new roman", serif;
-  --heading: 'Founders Grotesk X-Condensed', Impact, sans-serif;
+  --masthead: 'Founders Grotesk X-Condensed', Impact, sans-serif;
 }
 
 @font-face {
@@ -67,6 +67,7 @@ html, body {
 body {
   background: white;
   color:rgba(0, 0, 0, .75);
+  font-size: 20px;
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
 }
@@ -106,26 +107,70 @@ small {
   font-size: inherit;
 }
 
-body {
-  display: grid;
-}
-
 #header,
-#main,
 #footer {
   display: grid;
   grid-template-columns: repeat(14, 1fr);
   column-gap: 16px;
 }
 
-#header > *{
-  grid-column-start: 2;
-  grid-column-end: 3;
+#header {
+  font-family: var(--masthead);
+  padding: 1.5em 0;
 }
 
-#main > * {
-  grid-column-start: 4;
-  grid-column-end: 10;
+#home {
+  grid-column-start: 2;
+  grid-column-end: 7;
+  font-size: 2em;
+  align-self: center;
+  color: inherit;
+  text-decoration: none;
+}
+
+#header > nav {
+  grid-column-start: 7;
+  grid-column-end: -2;
+}
+
+#header > nav > ul {
+  padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: end;
+}
+
+#header > nav > ul > li > a {
+  display: inline-block;
+  padding: 1.5em;
+  text-decoration: none;
+}
+
+#content {
+  grid-column-start: 1;
+  grid-column-end: -1;
+  display: grid;
+  grid-template-columns: repeat(14, 1fr);
+}
+
+#content > h1 {
+  grid-row-start: 1;
+  grid-row-end: 2;
+  grid-column-start: 3;
+  grid-column-end: -3;
+  text-align: center;
+}
+
+#content > picture {
+  grid-row-start: 2;
+  grid-column-start: 2;
+  grid-column-end: 6;
+}
+
+#content > .summary {
+  grid-row-start: 2;
+  grid-column-start: 7;
+  grid-column-end: 12;
 }
 
 #excerpt {
@@ -150,7 +195,7 @@ body {
 
 #testimonials {
   display: grid;
-  grid-template-columns: repeat(6, 1fr);
+  grid-template-columns: repeat(14, 1fr);
   column-gap: 16px;
   padding-top: 60px;
   padding-bottom: 60px;
@@ -169,18 +214,18 @@ body {
 }
 
 #testimonials > blockquote:nth-child(3n+1) {
-  grid-column-start: 1;
-  grid-column-end: 3;
+  grid-column-start: 4;
+  grid-column-end: 6;
 }
 
 #testimonials > blockquote:nth-child(3n+2) {
-  grid-column-start: 3;
-  grid-column-end: 5;
+  grid-column-start: 6;
+  grid-column-end: 8;
 }
 
 #testimonials > blockquote:nth-child(3n) {
-  grid-column-start: 5;
-  grid-column-end: 7;
+  grid-column-start: 8;
+  grid-column-end: 10;
 }
 
 #about {
@@ -230,6 +275,11 @@ body {
   color: white;
   text-decoration: none;
   border-bottom: 1px solid var(--level41);
+}
+
+#footer > .metalinks,
+#footer > .copyright {
+  font-size: 14px;
 }
 
 .metalinks {
