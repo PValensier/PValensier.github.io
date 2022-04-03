@@ -17,8 +17,8 @@ jobs:
       with:
         name: paulvalensier
         authToken: '${{ secrets.CACHIX_AUTH_TOKEN }}'
-    - run: nix flake archive --json  | jq -r '.path,(.inputs|to_entries[].value.path)' | cachix push mycache
-    - run: nix build --json | jq -r '.[].outputs | to_entries[].value' | cachix push mycache
+    - run: nix flake archive --json  | jq -r '.path,(.inputs|to_entries[].value.path)' | cachix push paulvalensier
+    - run: nix build --json | jq -r '.[].outputs | to_entries[].value' | cachix push paulvalensier
     - run: nix build .
     - name: "Deploying 🚀"
       uses: peaceiris/actions-gh-pages@v1.1.0
