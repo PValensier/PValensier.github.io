@@ -3,6 +3,6 @@
 
 set -eu
 
-SITE=$(nix build --no-link .x86_64-linux)
+SITE=$(nix build --no-link .)
 ghp-import --message "Automatic update from https://github.com/PValensier/pvalensier.github.io" "$SITE"
 git push --force origin gh-pages:gh-pages
