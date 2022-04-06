@@ -1,6 +1,6 @@
 ---
 title: "Mon rêve: vivre sur un bateau"
-layout: base
+layout: prose
 ---
 
 Je l'appelerai "Le Pamela".

@@ -1,6 +1,6 @@
 ---
 title: Ma vie, cette garce indomptable
-layout: base
+layout: prose
 ---
 
 Depuis tout petit, j'ai toujours su que j'avais un don pour la chanson. Ma mère me disait toujours:
