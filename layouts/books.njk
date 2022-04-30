@@ -1,0 +1,13 @@
+<section id="books">
+  <h2>Livres</h2>
+  {% for book in collections.books %}
+    <a class="book-item" href="{{ book.url | url }}">
+      <h3>{{ book.data.title }}</h3>
+      <picture>
+        <source type="image/avif" srcset="/img/{{ book.data.cover | url }}.avif">
+        <source type="image/webp" srcset="/img/{{ book.data.cover | url }}.webp">
+        <img src="/img/{{ book.data.cover | url }}.png" alt="" loading="lazy">
+      </picture>
+    </a>
+  {% endfor %}
+</section>

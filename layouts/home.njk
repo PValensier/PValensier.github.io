@@ -2,25 +2,4 @@
 layout: base.njk
 ---
 
-<section id="paul">
-  {{ content | safe }}
-</section>
-
-<nav id="toc">
-  <ol>
-    <li><a href="{{ '/livres' | url }}">Livres</a>
-    <li><a href="{{ '/contact' | url }}">Contact</a>
-  </ol>
-</nav>
-
-{% for book in collections.books %}
-<section>
-  <h2>{{ book.data.title }}</h2>
-  <picture>
-    <source type="image/avif" srcset="/img/{{ book.data.cover | url }}.avif">
-    <source type="image/webp" srcset="/img/{{ book.data.cover | url }}.webp">
-    <img src="/img/{{ book.data.cover | url }}.png" alt="" loading="lazy">
-  </picture>
-  <a href="{{ book.url | url }}">En détails</a>
-</section>
-{% endfor %}
+{% include './books.njk' %}
