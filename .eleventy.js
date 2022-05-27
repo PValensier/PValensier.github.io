@@ -1,4 +1,7 @@
+const typeset = require('typeset');
+
 module.exports = function (eleventyConfig) {
+  eleventyConfig.addFilter("typeset", typeset);
   eleventyConfig.addPassthroughCopy({
     "src/img": "img",
     "src/css": "css",

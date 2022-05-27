@@ -13,19 +13,19 @@
       forSystem = system: 
         let 
           pkgs = nixpkgs.legacyPackages.${system};
-          nodeDependencies = (import node-deps { inherit pkgs; }).shell.nodeDependencies;
+          nodeDependencies = (import node-deps { inherit pkgs; nodejs = pkgs.nodejs-14_x; }).shell.nodeDependencies;
         in 
           rec {
             devShell =
               pkgs.mkShell {
-                buildInputs = [ pkgs.nodejs-12_x pkgs.nodePackages.node2nix pkgs.jq ];
+                buildInputs = [ pkgs.nodejs-14_x pkgs.nodePackages.node2nix pkgs.jq ];
               };
             
             defaultPackage = 
               pkgs.stdenv.mkDerivation {
                 name = "paulvalensier.github.io-${self.shortRev or "dirty"}";
                 
-                buildInputs = [ pkgs.nodejs-12_x ];
+                buildInputs = [ pkgs.nodejs-14_x ];
 
                 src = ./.;
 

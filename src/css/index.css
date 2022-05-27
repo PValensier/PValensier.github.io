@@ -71,8 +71,9 @@ body {
   5. Improve text rendering
 */
 body {
-  background: white;
+  background-color: var(--level1);
   color: rgba(0, 0, 0, .75);
+  font-family: var(--text);
   font-size: 20px;
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
@@ -113,20 +114,6 @@ h6 {
   overflow-wrap: break-word;
 }
 
-/*
-  9. Create a root stacking context
-*/
-#root,
-#__next {
-  isolation: isolate;
-}
-
-html,
-body {
-  background-color: white;
-  font-family: var(--text);
-}
-
 small {
   font-size: inherit;
 }
@@ -139,8 +126,9 @@ small {
 }
 
 #header {
+  background: white;
   font-family: var(--masthead);
-  padding: 1em 0;
+  padding: 0;
 }
 
 #home {
@@ -164,28 +152,28 @@ small {
   justify-content: end;
 }
 
+#header>nav>ul>li {
+  padding: 2em 1.5em;
+}
+
 #header>nav>ul>li>a {
   box-sizing: border-box;
-  border-top: 4px solid transparent;
+  border-bottom: 4px solid transparent;
   color: inherit;
-  display: inline-block;
-  padding: 1.5em;
+  padding: .5em 0;
   text-decoration: none;
   transition: all 80ms ease-in-out;
 }
 
 #header>nav>ul>li>a:hover,
 #header>nav>ul>li>a:focus {
-  background-color: var(--level4);
-  border-top: 4px solid var(--level2);
-  color: white;
+  border-bottom: 4px solid var(--level2);
 }
 
 #content {
-  grid-column-start: 1;
-  grid-column-end: -1;
   display: grid;
   grid-template-columns: repeat(14, 1fr);
+  column-gap: 16px;
 }
 
 #content>h1 {
@@ -216,10 +204,6 @@ small {
 }
 
 #excerpt {
-  grid-column-start: 1;
-  grid-column-end: 16;
-  background-color: var(--level4);
-  color: var(--level1);
   font-style: italic;
   font-size: 36px;
   line-height: 40px;
@@ -244,7 +228,6 @@ small {
 }
 
 #testimonials>blockquote {
-  background-color: var(--level1);
   padding: 16px 4px;
   margin: 0 -4px;
   min-height: 10em;
@@ -291,10 +274,8 @@ small {
   border-top: 1px solid;
   padding-bottom: 60px;
   padding-top: 60px;
-  grid-column-start: 2;
-  grid-column-end: 14;
   display: grid;
-  grid-template-columns: repeat(12, 1fr);
+  grid-template-columns: repeat(14, 1fr);
   column-gap: 16px;
 }
 
