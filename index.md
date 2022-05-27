@@ -10,8 +10,8 @@ readOnlineLink: https://google.com
 cover: la-couleur-des-jolies-choses
 
 testimonials:
-  - quote: J'ai adoré comme une tarte aux pommes
-    name: Annie L.
+  - quote: Je viens de finir ce livre que ma meilleure amie m'a offert. Elle me disait que je n'avais pas forcément le bon mindset pour le lire car je suis triste en ce moment. Au contraire c'est le livre dont j'avais besoin ! J'ai une grosse préférence pour les livres spirituels donc c'était parfait. Même si j'ai beaucoup pleuré. Je suis sensible en ce moment, mais mes livres favoris sont ceux qui me bouleversent et celui-ci fait franchement partie de mes lectures favorites de l'nnée, donc merci pour cela.
+    name: Marie M.
   - quote: J'ai adoré comme une tarte aux pommes
     name: Annie L.
   - quote: J'ai adoré comme une tarte aux pommes
