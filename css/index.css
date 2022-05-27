@@ -152,6 +152,7 @@ small {
   grid-column-start: 3;
   grid-column-end: -3;
   text-align: center;
+  margin: 2em 0 1em;
 }
 
 #content>.content-body {
@@ -180,8 +181,8 @@ small {
   display: grid;
   grid-template-columns: repeat(14, 1fr);
   column-gap: 16px;
-  padding-top: 60px;
-  padding-bottom: 60px;
+  padding-top: 4em;
+  padding-bottom: 2em;
 }
 
 #excerpt>p {
