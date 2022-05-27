@@ -128,7 +128,7 @@ small {
 #header {
   background: white;
   font-family: var(--masthead);
-  padding: 0;
+  padding: 1em 0;
 }
 
 #home {
