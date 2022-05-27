@@ -1,7 +1,23 @@
 ---
-layout: home.njk
-title: Paul Valensier
-description: Un auteur qu'il est bien
+tags: books
+layout: book
+title: La couleur des jolies choses
+quote: Je me suis souvent demandé qui je voulais être. J'ai passé le plus clair de mon temps à chercher qui j'étais. A l'image d'un enfant qui s'entête, j'ai testé des choses. J'ai rempli ma vie, j'ai consommé. J'ai couru après les choses. J'ai oublié de vivre.
+
+fnacLink: https://google.com
+readOnlineLink: https://google.com
+
+cover: la-couleur-des-jolies-choses
+
+testimonials:
+  - quote: J'ai adoré comme une tarte aux pommes
+    name: Annie L.
+  - quote: J'ai adoré comme une tarte aux pommes
+    name: Annie L.
+  - quote: J'ai adoré comme une tarte aux pommes
+    name: Annie L.
 ---
 
-Paul Valensier est né un jour de voyage au cours de l’été 1979. Il y a découvert un monde imaginaire et de rêverie qu’il n’a plus jamais quitté. Il vogue aux quatre coins du monde et parfois revient chez lui pour se ressourcer.
+Gérard Léopold, 79 ans, part en retraite spirituelle au Népal. Après un cataclysme, il se retrouve prisonnier dans la roche. Seul face à lui-même, il fait un bilan de sa vie.
+
+Il explore son for intérieur, découvre sa véritable identité et une richesse insoupçonnée qui le guide vers les voies de la spiritualité.
