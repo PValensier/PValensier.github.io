@@ -18,7 +18,7 @@
           rec {
             devShell =
               pkgs.mkShell {
-                buildInputs = [ pkgs.nodejs-14_x pkgs.nodePackages.node2nix pkgs.jq ];
+                buildInputs = [ pkgs.nodejs-14_x pkgs.jq nodeDependencies ];
               };
             
             defaultPackage = 
