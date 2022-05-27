@@ -140,36 +140,6 @@ small {
   text-decoration: none;
 }
 
-#header>nav {
-  grid-column-start: 7;
-  grid-column-end: -2;
-}
-
-#header>nav>ul {
-  padding: 0;
-  list-style: none;
-  display: flex;
-  justify-content: end;
-}
-
-#header>nav>ul>li {
-  padding: 2em 1.5em;
-}
-
-#header>nav>ul>li>a {
-  box-sizing: border-box;
-  border-bottom: 4px solid transparent;
-  color: inherit;
-  padding: .5em 0;
-  text-decoration: none;
-  transition: all 80ms ease-in-out;
-}
-
-#header>nav>ul>li>a:hover,
-#header>nav>ul>li>a:focus {
-  border-bottom: 4px solid var(--level2);
-}
-
 #content {
   display: grid;
   grid-template-columns: repeat(14, 1fr);
