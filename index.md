@@ -1,6 +1,6 @@
 ---
 tags: books
-layout: book
+layout: home
 title: La couleur des jolies choses
 quote: Je me suis souvent demandé qui je voulais être. J'ai passé le plus clair de mon temps à chercher qui j'étais. A l'image d'un enfant qui s'entête, j'ai testé des choses. J'ai rempli ma vie, j'ai consommé. J'ai couru après les choses. J'ai oublié de vivre.
 
