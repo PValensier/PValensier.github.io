@@ -1,9 +1,8 @@
 ---
 tags: books
 layout: book
-title: La Couleur des Jolies Choses
-quote: Je songe d’un air grave qu’il me reste à peu près vingt-six jours.
-blurb: Gérard Léopold, 79 ans, part en retraite spirituelle au Népal. Après un cataclysme, il se retrouve prisonnier dans la roche. Seul face à lui-même, il fait un bilan de sa vie.
+title: La couleur des jolies choses
+quote: Je me suis souvent demandé qui je voulais être. J'ai passé le plus clair de mon temps à chercher qui j'étais. A l'image d'un enfant qui s'entête, j'ai testé des choses. J'ai rempli ma vie, j'ai consommé. J'ai couru après les choses. J'ai oublié de vivre.
 
 fnacLink: https://google.com
 readOnlineLink: https://google.com
