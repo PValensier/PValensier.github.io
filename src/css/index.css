@@ -219,6 +219,17 @@ small {
   grid-column-end: 13;
 }
 
+#excerpt>p::before {
+  content: "«";
+  margin-left: -1em;
+  margin-right: 1ex;
+}
+
+#excerpt>p::after {
+  content: "»";
+  margin-left: 1ex;
+}
+
 #testimonials {
   display: grid;
   grid-template-columns: repeat(14, 1fr);
