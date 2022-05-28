@@ -19,6 +19,10 @@
       {{ content | safe }}
     </main>
 
+    <section id="about">
+      <p>{{ apropos | typeset }}</p>
+    </section>
+
     <footer id="footer" role="contentinfo">
       <blockquote>
         <p>{{ metadata.footer.quote | typeset }}</p>
