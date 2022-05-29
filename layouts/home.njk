@@ -3,16 +3,12 @@ layout: base.njk
 ---
 
 <div id="content" class="book">
-  <h1>{{ title }}</h1>
-
   <div class="summary">
+    <h1>{{ title }}</h1>
+
     {{ content | safe }}
 
-    <ul class="buy-links">
-      <li>Découvre le premier chapitre gratuitement <a href="{{ pdfLink | url }}">PDF</a> <a href="{{ audioLink | url }}">Audio</a></li>
-      <li><a href="{{ amazonLink | url }}">Achète la version papier sur Amazon.fr</a></li>
-      <li><a href="{{ bodLink | url }}">Achète la version digital sur BoD.fr</a></li>
-    </ul>
+    <p><i>Publication en cours, <a href="mailto:salut@paul-valensier.com">contacte l'auteur</a> pour en savoir plus.</i></p>
   </div>
 
   <picture>
