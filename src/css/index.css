@@ -220,6 +220,12 @@ small {
   top: 100%;
 }
 
+@media(max-width: 768px) {
+  #content a::after {
+    top: calc(100% + 2px);
+  }
+}
+
 #content>picture {
   grid-row-start: 1;
   grid-column-start: 2;
@@ -233,15 +239,10 @@ small {
   grid-column-end: 12;
 }
 
-#content>.summary>h1 {
-  font-size: 1em;
-  line-height: inherit;
-}
-
 @media (max-width: 768px) {
   #content>.summary>h1 {
-    font-size: 2em;
-    line-height: 1;
+    font-size: 1em;
+    line-height: inherit;
   }
 
   #content>.summary {
