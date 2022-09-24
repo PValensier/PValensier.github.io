@@ -16,8 +16,8 @@ layout: base.njk
   </div>
 
   <picture>
-    <source type="image/avif" srcset="/img/{{ cover | url }}.avif">
-    <source type="image/webp" srcset="/img/{{ cover | url }}.webp">
+    <source type="image/avif" src="/img/{{ cover | url }}.avif">
+    <source type="image/webp" src="/img/{{ cover | url }}.webp">
     <img src="/img/{{ cover | url }}.png" alt="" loading="lazy">
   </picture>
 </div>
